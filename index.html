@@ -207,16 +207,16 @@
         function pop_kubur2_3(feature, layer) {
             var popupContent = '<table>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['id'] !== null ? autolinker.link(feature.properties['id'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">NoPtk</th>\
+                        <td class="visible-with-data" id="NoPtk">' + (feature.properties['NoPtk'] !== null ? autolinker.link(feature.properties['NoPtk'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['NoPtk'] !== null ? autolinker.link(feature.properties['NoPtk'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">NmArwah</th>\
+                        <td class="visible-with-data" id="NmArwah">' + (feature.properties['NmArwah'] !== null ? autolinker.link(feature.properties['NmArwah'].toLocaleString()) : '') + '</td>\
                     </tr>\
                     <tr>\
-                        <td colspan="2">' + (feature.properties['NmArwah'] !== null ? autolinker.link(feature.properties['NmArwah'].toLocaleString()) : '') + '</td>\
-                    </tr>\
-                    <tr>\
-                        <td colspan="2">' + (feature.properties['TrkKbumi'] !== null ? autolinker.link(feature.properties['TrkKbumi'].toLocaleString()) : '') + '</td>\
+                        <th scope="row">TrkKbumi</th>\
+                        <td class="visible-with-data" id="TrkKbumi">' + (feature.properties['TrkKbumi'] !== null ? autolinker.link(feature.properties['TrkKbumi'].toLocaleString()) : '') + '</td>\
                     </tr>\
                 </table>';
             var content = removeEmptyRowsFromPopupContent(popupContent, feature);
@@ -229,7 +229,7 @@
         function style_kubur2_3_0() {
             return {
                 pane: 'pane_kubur2_3',
-                radius: 4.0,
+                radius: 5.2,
                 opacity: 1,
                 color: 'rgba(35,35,35,1.0)',
                 dashArray: '',
